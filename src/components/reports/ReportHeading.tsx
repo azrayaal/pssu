@@ -15,7 +15,7 @@ export function ReportHeading({ title, periodLabel }: { title: string; periodLab
 
   return (
     <div className="hidden border-b border-ink-300 px-5 py-4 text-center print:block">
-      <p className="text-base font-semibold text-ink-900">{company?.legalName ?? 'PT PSSU Indonesia'}</p>
+      <p className="text-base font-semibold text-ink-900">{company?.legalName ?? 'PT PTSU Indonesia'}</p>
       <p className="text-[13px] text-ink-600">
         {company?.address}, {company?.city} {company?.postalCode}
       </p>

@@ -233,7 +233,7 @@ export default function ExpensesPage() {
                     { header: 'Status', value: (row: Expense) => STATUS_LABELS[row.status] },
                   ],
                   data?.data ?? [],
-                  { title: 'Daftar Biaya', subtitle: 'PT PSSU Indonesia' },
+                  { title: 'Daftar Biaya', subtitle: 'PT PTSU Indonesia' },
                 );
                 toast.success('Ekspor selesai', 'Berkas Excel daftar biaya telah diunduh.');
               }}

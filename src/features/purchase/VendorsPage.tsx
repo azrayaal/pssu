@@ -205,7 +205,7 @@ export default function VendorsPage() {
                     { header: 'Status', value: (row: Vendor) => row.status },
                   ],
                   data?.data ?? [],
-                  { title: 'Daftar Pemasok', subtitle: 'PT PSSU Indonesia' },
+                  { title: 'Daftar Pemasok', subtitle: 'PT PTSU Indonesia' },
                 );
                 toast.success('Ekspor selesai', 'Berkas Excel daftar pemasok telah diunduh.');
               }}

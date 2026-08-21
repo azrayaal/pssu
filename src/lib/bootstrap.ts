@@ -11,7 +11,7 @@ export async function bootstrapApi(): Promise<'mock' | 'http'> {
 
   if (mode === 'rest') {
     const baseUrl = import.meta.env.VITE_API_BASE_URL ?? '/api/v1';
-    setTransport(createHttpTransport(baseUrl, () => localStorage.getItem('pssu.token')));
+    setTransport(createHttpTransport(baseUrl, () => localStorage.getItem('ptsu.token')));
     return 'http';
   }
 

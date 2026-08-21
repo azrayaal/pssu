@@ -14,13 +14,13 @@ interface CompanyState {
 export const useCompanyStore = create<CompanyState>()(
   persist(
     (set) => ({
-      activeCompanyId: 'co-pssu',
+      activeCompanyId: 'co-ptsu',
       dashboardPeriod: '12m',
       defaultReportPeriod: 'year-to-date',
       setActiveCompany: (activeCompanyId) => set({ activeCompanyId }),
       setDashboardPeriod: (dashboardPeriod) => set({ dashboardPeriod }),
       setDefaultReportPeriod: (defaultReportPeriod) => set({ defaultReportPeriod }),
     }),
-    { name: 'pssu.company' },
+    { name: 'ptsu.company' },
   ),
 );

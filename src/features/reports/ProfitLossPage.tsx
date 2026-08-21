@@ -62,7 +62,7 @@ export default function ProfitLossPage() {
                 { header: 'Periode Pembanding', value: (row: ReportLine) => row.comparativeAmount ?? '' },
               ],
               data?.lines ?? [],
-              { title: 'Laporan Laba Rugi', subtitle: `PT PSSU Indonesia — ${periodLabel}` },
+              { title: 'Laporan Laba Rugi', subtitle: `PT PTSU Indonesia — ${periodLabel}` },
             );
             toast.success('Ekspor selesai', 'Berkas Excel laporan laba rugi telah diunduh.');
           }}

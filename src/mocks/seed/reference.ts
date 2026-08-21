@@ -17,11 +17,11 @@ const rng = createRng(20260821);
 
 export const COMPANIES: Company[] = [
   {
-    id: 'co-pssu',
-    name: 'PT PSSU Indonesia',
-    legalName: 'PT Prima Sarana Sistem Utama',
+    id: 'co-ptsu',
+    name: 'PT PTSU Indonesia',
+    legalName: 'PT Prima Teknologi Sistem Utama',
     taxId: '01.234.567.8-045.000',
-    initials: 'PS',
+    initials: 'PT',
     currency: 'IDR',
     fiscalYearStart: '01-01',
     address: 'Gedung Cyber 2 Lantai 18, Jl. H. R. Rasuna Said Blok X-5',
@@ -29,8 +29,8 @@ export const COMPANIES: Company[] = [
     province: 'DKI Jakarta',
     postalCode: '12950',
     phone: '021-5793-4400',
-    email: 'finance@pssu.co.id',
-    website: 'www.pssu.co.id',
+    email: 'finance@ptsu.co.id',
+    website: 'www.ptsu.co.id',
   },
   {
     id: 'co-nusantara',
@@ -178,20 +178,20 @@ const USER_SEEDS: {
   status?: 'Inactive';
   lastLogin: string | null;
 }[] = [
-  { name: 'Rahmat Hidayat', email: 'rahmat.hidayat@pssu.co.id', role: 'role-admin', department: 'Teknologi Informasi', jobTitle: 'IT Manager', lastLogin: '2026-08-21T01:42:00.000Z' },
-  { name: 'Dewi Kartika Sari', email: 'dewi.kartika@pssu.co.id', role: 'role-finance-manager', department: 'Keuangan', jobTitle: 'Finance Manager', lastLogin: '2026-08-21T00:58:00.000Z' },
-  { name: 'Bambang Prasetyo', email: 'bambang.prasetyo@pssu.co.id', role: 'role-accountant', department: 'Akuntansi', jobTitle: 'Senior Accountant', lastLogin: '2026-08-20T09:15:00.000Z' },
-  { name: 'Siti Nurhaliza', email: 'siti.nurhaliza@pssu.co.id', role: 'role-accountant', department: 'Akuntansi', jobTitle: 'Accounting Staff', lastLogin: '2026-08-20T07:22:00.000Z' },
-  { name: 'Andi Wijaya', email: 'andi.wijaya@pssu.co.id', role: 'role-sales-admin', department: 'Penjualan', jobTitle: 'Sales Admin Supervisor', lastLogin: '2026-08-19T10:04:00.000Z' },
-  { name: 'Maya Puspita', email: 'maya.puspita@pssu.co.id', role: 'role-sales-admin', department: 'Penjualan', jobTitle: 'Sales Administrator', lastLogin: '2026-08-18T04:31:00.000Z' },
-  { name: 'Hendra Gunawan', email: 'hendra.gunawan@pssu.co.id', role: 'role-finance-manager', department: 'Keuangan', jobTitle: 'Treasury Officer', lastLogin: '2026-08-21T02:11:00.000Z' },
-  { name: 'Ratna Dewi', email: 'ratna.dewi@pssu.co.id', role: 'role-accountant', department: 'Akuntansi', jobTitle: 'Tax Officer', lastLogin: '2026-08-17T08:47:00.000Z' },
-  { name: 'Fajar Nugroho', email: 'fajar.nugroho@pssu.co.id', role: 'role-auditor', department: 'Audit Internal', jobTitle: 'Internal Auditor', lastLogin: '2026-08-14T03:05:00.000Z' },
-  { name: 'Lestari Handayani', email: 'lestari.handayani@pssu.co.id', role: 'role-auditor', department: 'Audit Internal', jobTitle: 'Audit Supervisor', lastLogin: '2026-07-30T06:19:00.000Z' },
-  { name: 'Yusuf Maulana', email: 'yusuf.maulana@pssu.co.id', role: 'role-sales-admin', department: 'Penjualan', jobTitle: 'Account Executive', status: 'Inactive', lastLogin: '2026-03-11T02:55:00.000Z' },
-  { name: 'Nadia Safitri', email: 'nadia.safitri@pssu.co.id', role: 'role-admin', department: 'Teknologi Informasi', jobTitle: 'System Administrator', lastLogin: '2026-08-20T23:40:00.000Z' },
-  { name: 'Iwan Setiawan', email: 'iwan.setiawan@pssu.co.id', role: 'role-finance-manager', department: 'Keuangan', jobTitle: 'Budget Controller', lastLogin: '2026-08-19T05:26:00.000Z' },
-  { name: 'Putri Ayu Lestari', email: 'putri.ayu@pssu.co.id', role: 'role-accountant', department: 'Akuntansi', jobTitle: 'AP Officer', lastLogin: '2026-08-21T01:03:00.000Z' },
+  { name: 'Rahmat Hidayat', email: 'rahmat.hidayat@ptsu.co.id', role: 'role-admin', department: 'Teknologi Informasi', jobTitle: 'IT Manager', lastLogin: '2026-08-21T01:42:00.000Z' },
+  { name: 'Dewi Kartika Sari', email: 'dewi.kartika@ptsu.co.id', role: 'role-finance-manager', department: 'Keuangan', jobTitle: 'Finance Manager', lastLogin: '2026-08-21T00:58:00.000Z' },
+  { name: 'Bambang Prasetyo', email: 'bambang.prasetyo@ptsu.co.id', role: 'role-accountant', department: 'Akuntansi', jobTitle: 'Senior Accountant', lastLogin: '2026-08-20T09:15:00.000Z' },
+  { name: 'Siti Nurhaliza', email: 'siti.nurhaliza@ptsu.co.id', role: 'role-accountant', department: 'Akuntansi', jobTitle: 'Accounting Staff', lastLogin: '2026-08-20T07:22:00.000Z' },
+  { name: 'Andi Wijaya', email: 'andi.wijaya@ptsu.co.id', role: 'role-sales-admin', department: 'Penjualan', jobTitle: 'Sales Admin Supervisor', lastLogin: '2026-08-19T10:04:00.000Z' },
+  { name: 'Maya Puspita', email: 'maya.puspita@ptsu.co.id', role: 'role-sales-admin', department: 'Penjualan', jobTitle: 'Sales Administrator', lastLogin: '2026-08-18T04:31:00.000Z' },
+  { name: 'Hendra Gunawan', email: 'hendra.gunawan@ptsu.co.id', role: 'role-finance-manager', department: 'Keuangan', jobTitle: 'Treasury Officer', lastLogin: '2026-08-21T02:11:00.000Z' },
+  { name: 'Ratna Dewi', email: 'ratna.dewi@ptsu.co.id', role: 'role-accountant', department: 'Akuntansi', jobTitle: 'Tax Officer', lastLogin: '2026-08-17T08:47:00.000Z' },
+  { name: 'Fajar Nugroho', email: 'fajar.nugroho@ptsu.co.id', role: 'role-auditor', department: 'Audit Internal', jobTitle: 'Internal Auditor', lastLogin: '2026-08-14T03:05:00.000Z' },
+  { name: 'Lestari Handayani', email: 'lestari.handayani@ptsu.co.id', role: 'role-auditor', department: 'Audit Internal', jobTitle: 'Audit Supervisor', lastLogin: '2026-07-30T06:19:00.000Z' },
+  { name: 'Yusuf Maulana', email: 'yusuf.maulana@ptsu.co.id', role: 'role-sales-admin', department: 'Penjualan', jobTitle: 'Account Executive', status: 'Inactive', lastLogin: '2026-03-11T02:55:00.000Z' },
+  { name: 'Nadia Safitri', email: 'nadia.safitri@ptsu.co.id', role: 'role-admin', department: 'Teknologi Informasi', jobTitle: 'System Administrator', lastLogin: '2026-08-20T23:40:00.000Z' },
+  { name: 'Iwan Setiawan', email: 'iwan.setiawan@ptsu.co.id', role: 'role-finance-manager', department: 'Keuangan', jobTitle: 'Budget Controller', lastLogin: '2026-08-19T05:26:00.000Z' },
+  { name: 'Putri Ayu Lestari', email: 'putri.ayu@ptsu.co.id', role: 'role-accountant', department: 'Akuntansi', jobTitle: 'AP Officer', lastLogin: '2026-08-21T01:03:00.000Z' },
 ];
 
 export const USERS: User[] = USER_SEEDS.map((seed, index) => {
@@ -345,37 +345,37 @@ export const VENDORS: Vendor[] = VENDOR_SEEDS.map((seed, index) => ({
 export const BANK_ACCOUNTS: BankAccount[] = [
   {
     id: 'bank-001', name: 'Bank Mandiri - Operasional', accountNumber: '123-00-9876543-2', bankName: 'Bank Mandiri',
-    branch: 'KCP Jakarta Rasuna Said', holderName: 'PT Prima Sarana Sistem Utama', glAccountId: 'acc-1-1201', glAccountCode: '1-1201',
+    branch: 'KCP Jakarta Rasuna Said', holderName: 'PT Prima Teknologi Sistem Utama', glAccountId: 'acc-1-1201', glAccountCode: '1-1201',
     currency: 'IDR', openingBalance: 1_450_000_000, currentBalance: 0, kind: 'Bank', status: 'Active',
     createdAt: '2025-07-01T02:00:00.000Z', createdBy: 'Sistem', updatedAt: '2026-08-01T02:00:00.000Z', updatedBy: 'Hendra Gunawan',
   },
   {
     id: 'bank-002', name: 'Bank Central Asia - Penerimaan', accountNumber: '548-011-2233', bankName: 'Bank Central Asia',
-    branch: 'KCU Sudirman', holderName: 'PT Prima Sarana Sistem Utama', glAccountId: 'acc-1-1202', glAccountCode: '1-1202',
+    branch: 'KCU Sudirman', holderName: 'PT Prima Teknologi Sistem Utama', glAccountId: 'acc-1-1202', glAccountCode: '1-1202',
     currency: 'IDR', openingBalance: 980_000_000, currentBalance: 0, kind: 'Bank', status: 'Active',
     createdAt: '2025-07-01T02:00:00.000Z', createdBy: 'Sistem', updatedAt: '2026-08-01T02:00:00.000Z', updatedBy: 'Hendra Gunawan',
   },
   {
     id: 'bank-003', name: 'Bank Negara Indonesia - Payroll', accountNumber: '077-123-4455', bankName: 'Bank Negara Indonesia',
-    branch: 'KCP Kuningan', holderName: 'PT Prima Sarana Sistem Utama', glAccountId: 'acc-1-1203', glAccountCode: '1-1203',
+    branch: 'KCP Kuningan', holderName: 'PT Prima Teknologi Sistem Utama', glAccountId: 'acc-1-1203', glAccountCode: '1-1203',
     currency: 'IDR', openingBalance: 420_000_000, currentBalance: 0, kind: 'Bank', status: 'Active',
     createdAt: '2025-07-01T02:00:00.000Z', createdBy: 'Sistem', updatedAt: '2026-08-01T02:00:00.000Z', updatedBy: 'Hendra Gunawan',
   },
   {
     id: 'bank-004', name: 'Bank Rakyat Indonesia - Cadangan', accountNumber: '002-105-6789-501', bankName: 'Bank Rakyat Indonesia',
-    branch: 'KCP Setiabudi', holderName: 'PT Prima Sarana Sistem Utama', glAccountId: 'acc-1-1204', glAccountCode: '1-1204',
+    branch: 'KCP Setiabudi', holderName: 'PT Prima Teknologi Sistem Utama', glAccountId: 'acc-1-1204', glAccountCode: '1-1204',
     currency: 'IDR', openingBalance: 310_000_000, currentBalance: 0, kind: 'Bank', status: 'Active',
     createdAt: '2025-07-01T02:00:00.000Z', createdBy: 'Sistem', updatedAt: '2026-08-01T02:00:00.000Z', updatedBy: 'Hendra Gunawan',
   },
   {
     id: 'bank-005', name: 'Kas Besar Kantor Pusat', accountNumber: 'KAS-BESAR-01', bankName: 'Kas Internal',
-    branch: 'Kantor Pusat', holderName: 'PT Prima Sarana Sistem Utama', glAccountId: 'acc-1-1102', glAccountCode: '1-1102',
+    branch: 'Kantor Pusat', holderName: 'PT Prima Teknologi Sistem Utama', glAccountId: 'acc-1-1102', glAccountCode: '1-1102',
     currency: 'IDR', openingBalance: 180_000_000, currentBalance: 0, kind: 'Cash', status: 'Active',
     createdAt: '2025-07-01T02:00:00.000Z', createdBy: 'Sistem', updatedAt: '2026-08-01T02:00:00.000Z', updatedBy: 'Siti Nurhaliza',
   },
   {
     id: 'bank-006', name: 'Kas Kecil Operasional', accountNumber: 'KAS-KECIL-01', bankName: 'Kas Internal',
-    branch: 'Kantor Pusat', holderName: 'PT Prima Sarana Sistem Utama', glAccountId: 'acc-1-1101', glAccountCode: '1-1101',
+    branch: 'Kantor Pusat', holderName: 'PT Prima Teknologi Sistem Utama', glAccountId: 'acc-1-1101', glAccountCode: '1-1101',
     currency: 'IDR', openingBalance: 25_000_000, currentBalance: 0, kind: 'Cash', status: 'Active',
     createdAt: '2025-07-01T02:00:00.000Z', createdBy: 'Sistem', updatedAt: '2026-08-01T02:00:00.000Z', updatedBy: 'Siti Nurhaliza',
   },

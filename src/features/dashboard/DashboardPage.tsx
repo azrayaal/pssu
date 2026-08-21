@@ -49,7 +49,7 @@ export default function DashboardPage() {
     <div className="space-y-5">
       <PageHeader
         title="Dashboard Keuangan"
-        description={`Ringkasan kinerja keuangan PT PSSU Indonesia per ${formatDateLong(TODAY)}.`}
+        description={`Ringkasan kinerja keuangan PT PTSU Indonesia per ${formatDateLong(TODAY)}.`}
         actions={
           <>
             <Tabs

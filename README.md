@@ -1,6 +1,6 @@
-# PSSU Accounting
+# PTSU Accounting
 
-Frontend untuk platform manajemen keuangan dan akuntansi PT PSSU Indonesia. Dibangun dengan
+Frontend untuk platform manajemen keuangan dan akuntansi PT PTSU Indonesia. Dibangun dengan
 React, TypeScript, Vite, dan Tailwind CSS. Seluruh data saat ini dilayani oleh mock server
 yang berjalan di browser, dengan lapisan transport yang dapat ditukar ke REST API tanpa
 mengubah satu pun komponen UI.
@@ -13,6 +13,21 @@ npm run dev      # http://localhost:5173
 npm run build    # type-check + production build
 npm run preview  # jalankan hasil build
 ```
+
+## Deployment (Vercel)
+
+`vercel.json` sudah disiapkan dan tidak memerlukan konfigurasi tambahan di dashboard:
+
+- **Rewrite SPA** mengarahkan seluruh path ke `index.html`, sehingga membuka atau me-refresh
+  rute seperti `/reports/profit-loss` tidak lagi menghasilkan 404. Pola `/((?!assets/).*)`
+  sengaja mengecualikan `assets/` agar berkas JavaScript yang benar-benar hilang tetap
+  menghasilkan 404 dan bukan HTML, sehingga galat `Unexpected token '<'` akibat `index.html`
+  basi yang menunjuk chunk lama tidak terjadi.
+- **Header cache**: berkas di `assets/` bernama hash sehingga aman di-cache permanen, sedangkan
+  `index.html` selalu divalidasi ulang agar deploy baru langsung terpakai.
+
+Tanpa variabel lingkungan apa pun, aplikasi berjalan dengan mock server. Untuk menyambungkan
+backend, set `VITE_API_MODE=rest` dan `VITE_API_BASE_URL` pada Environment Variables Vercel.
 
 ## Stack
 
@@ -90,7 +105,7 @@ interface Transport {
 ```bash
 # .env
 VITE_API_MODE=rest
-VITE_API_BASE_URL=https://api.pssu.co.id/v1
+VITE_API_BASE_URL=https://api.ptsu.co.id/v1
 ```
 
 Dengan nilai tersebut, `createHttpTransport()` aktif dan seluruh pemanggilan service langsung
@@ -125,4 +140,4 @@ langsung muncul pada field terkait.
   pada permukaan putih. Setiap grafik dengan dua seri atau lebih selalu menampilkan legenda.
 - **Cetak.** Kelas `print-hidden` dan `print-region` mengatur tata letak cetak; setiap laporan
   memiliki kop dokumen yang hanya muncul pada hasil cetak.
-# pssu
+# ptsu

@@ -10,7 +10,7 @@ export interface SalesCatalogItem {
 export const SALES_CATALOG: SalesCatalogItem[] = [
   { description: 'Implementasi Modul Akuntansi ERP', unit: 'Paket', minPrice: 85_000_000, maxPrice: 240_000_000, revenueAccount: '4-1000', cogsRatio: 0.42 },
   { description: 'Jasa Konsultasi Proses Bisnis Keuangan', unit: 'Man-day', minPrice: 4_500_000, maxPrice: 9_500_000, revenueAccount: '4-1000', cogsRatio: 0.38 },
-  { description: 'Lisensi PSSU Core (per pengguna / tahun)', unit: 'Lisensi', minPrice: 3_200_000, maxPrice: 6_800_000, revenueAccount: '4-1200', cogsRatio: 0.18 },
+  { description: 'Lisensi PTSU Core (per pengguna / tahun)', unit: 'Lisensi', minPrice: 3_200_000, maxPrice: 6_800_000, revenueAccount: '4-1200', cogsRatio: 0.18 },
   { description: 'Lisensi Modul Konsolidasi Multi Entitas', unit: 'Lisensi', minPrice: 12_000_000, maxPrice: 28_000_000, revenueAccount: '4-1200', cogsRatio: 0.2 },
   { description: 'Kontrak Pemeliharaan Sistem Tahunan', unit: 'Tahun', minPrice: 45_000_000, maxPrice: 160_000_000, revenueAccount: '4-1300', cogsRatio: 0.35 },
   { description: 'Pelatihan Pengguna Aplikasi Keuangan', unit: 'Batch', minPrice: 12_000_000, maxPrice: 35_000_000, revenueAccount: '4-1000', cogsRatio: 0.4 },

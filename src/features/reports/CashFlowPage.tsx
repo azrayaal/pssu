@@ -72,7 +72,7 @@ export default function CashFlowPage() {
                 { header: 'Nilai', value: (row: ReportLine) => (row.kind === 'section' ? '' : row.amount) },
               ],
               lines,
-              { title: 'Laporan Arus Kas', subtitle: `PT PSSU Indonesia — ${periodLabel}` },
+              { title: 'Laporan Arus Kas', subtitle: `PT PTSU Indonesia — ${periodLabel}` },
             );
             toast.success('Ekspor selesai', 'Berkas Excel laporan arus kas telah diunduh.');
           }}

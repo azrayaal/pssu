@@ -102,7 +102,7 @@ export default function AuditTrailPage() {
                   { header: 'Perangkat', value: (row: AuditLog) => row.userAgent },
                 ],
                 data?.data ?? [],
-                { title: 'Jejak Audit', subtitle: 'PT PSSU Indonesia' },
+                { title: 'Jejak Audit', subtitle: 'PT PTSU Indonesia' },
               );
               toast.success('Ekspor selesai', 'Berkas Excel jejak audit telah diunduh.');
             }}

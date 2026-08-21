@@ -277,7 +277,7 @@ export default function JournalEntriesPage() {
                     { header: 'Status', value: (row: JournalEntry) => row.status },
                   ],
                   data?.data ?? [],
-                  { title: 'Jurnal Umum', subtitle: 'PT PSSU Indonesia' },
+                  { title: 'Jurnal Umum', subtitle: 'PT PTSU Indonesia' },
                 );
                 toast.success('Ekspor selesai', 'Berkas Excel jurnal umum telah diunduh.');
               }}

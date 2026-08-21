@@ -65,7 +65,7 @@ export default function BalanceSheetPage() {
                 { header: 'Pembanding', value: (row: ReportLine) => row.comparativeAmount ?? '' },
               ],
               exportRows,
-              { title: 'Neraca', subtitle: `PT PSSU Indonesia — per ${formatDateLong(asOf)}` },
+              { title: 'Neraca', subtitle: `PT PTSU Indonesia — per ${formatDateLong(asOf)}` },
             );
             toast.success('Ekspor selesai', 'Berkas Excel neraca telah diunduh.');
           }}

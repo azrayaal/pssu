@@ -80,7 +80,7 @@ export default function SalesReportPage() {
                 { header: 'Sisa Piutang', value: (row: SalesReportRow) => row.outstanding },
               ],
               data?.rows ?? [],
-              { title: 'Laporan Penjualan', subtitle: `PT PSSU Indonesia — ${periodLabel}` },
+              { title: 'Laporan Penjualan', subtitle: `PT PTSU Indonesia — ${periodLabel}` },
             );
             toast.success('Ekspor selesai', 'Berkas Excel laporan penjualan telah diunduh.');
           }}

@@ -77,7 +77,7 @@ export function TrialBalanceView({ linkToLedger = true }: { linkToLedger?: boole
         onExportExcel={() => {
           exportToExcel('neraca-saldo', exportColumns, rows, {
             title: 'Neraca Saldo',
-            subtitle: `PT PSSU Indonesia — ${periodLabel}`,
+            subtitle: `PT PTSU Indonesia — ${periodLabel}`,
           });
           toast.success('Ekspor selesai', 'Berkas Excel neraca saldo telah diunduh.');
         }}

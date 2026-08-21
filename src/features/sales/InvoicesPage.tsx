@@ -273,7 +273,7 @@ export default function InvoicesPage() {
                     { header: 'Status', value: (row: Invoice) => row.status },
                   ],
                   data?.data ?? [],
-                  { title: 'Faktur Penjualan', subtitle: 'PT PSSU Indonesia' },
+                  { title: 'Faktur Penjualan', subtitle: 'PT PTSU Indonesia' },
                 );
                 toast.success('Ekspor selesai', 'Berkas Excel faktur penjualan telah diunduh.');
               }}

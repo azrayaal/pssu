@@ -80,7 +80,7 @@ export default function PurchaseReportPage() {
                 { header: 'Sisa Utang', value: (row: PurchaseReportRow) => row.outstanding },
               ],
               data?.rows ?? [],
-              { title: 'Laporan Pembelian', subtitle: `PT PSSU Indonesia — ${periodLabel}` },
+              { title: 'Laporan Pembelian', subtitle: `PT PTSU Indonesia — ${periodLabel}` },
             );
             toast.success('Ekspor selesai', 'Berkas Excel laporan pembelian telah diunduh.');
           }}

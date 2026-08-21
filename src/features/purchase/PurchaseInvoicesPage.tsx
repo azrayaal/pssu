@@ -214,7 +214,7 @@ export default function PurchaseInvoicesPage() {
                     { header: 'Status', value: (row: PurchaseInvoice) => row.status },
                   ],
                   data?.data ?? [],
-                  { title: 'Faktur Pembelian', subtitle: 'PT PSSU Indonesia' },
+                  { title: 'Faktur Pembelian', subtitle: 'PT PTSU Indonesia' },
                 );
                 toast.success('Ekspor selesai', 'Berkas Excel faktur pembelian telah diunduh.');
               }}

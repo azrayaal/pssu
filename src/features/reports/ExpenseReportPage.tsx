@@ -76,7 +76,7 @@ export default function ExpenseReportPage() {
                 { header: 'Kontribusi (%)', value: (row: ExpenseReportRow) => row.shareOfTotal.toFixed(1) },
               ],
               data?.rows ?? [],
-              { title: 'Laporan Biaya', subtitle: `PT PSSU Indonesia — ${periodLabel}` },
+              { title: 'Laporan Biaya', subtitle: `PT PTSU Indonesia — ${periodLabel}` },
             );
             toast.success('Ekspor selesai', 'Berkas Excel laporan biaya telah diunduh.');
           }}

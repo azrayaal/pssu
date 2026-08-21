@@ -148,11 +148,11 @@ export function SidebarBrand({ collapsed }: { collapsed: boolean }) {
   return (
     <div className={cn('flex items-center gap-2.5 border-b border-brand-600/50 px-4 py-3.5', collapsed && 'justify-center px-0')}>
       <span className="flex size-8 shrink-0 items-center justify-center  bg-white text-[13px] rounded-full font-bold text-brand-800">
-        PS
+        PT
       </span>
       {!collapsed ? (
         <span className="min-w-0">
-          <span className="block truncate text-sm font-semibold leading-tight text-white">PSSU Accounting</span>
+          <span className="block truncate text-sm font-semibold leading-tight text-white">PTSU Accounting</span>
           <span className="block truncate text-[11px] leading-tight text-brand-200">Financial Management</span>
         </span>
       ) : null}

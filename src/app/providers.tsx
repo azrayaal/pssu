@@ -10,7 +10,7 @@ function BootScreen() {
     <div className="flex h-screen items-center justify-center bg-ink-50">
       <div className="flex flex-col items-center gap-3">
         <span className="flex size-11 items-center justify-center rounded-md bg-brand-700 text-sm font-bold text-white">
-          PS
+          PT
         </span>
         <span className="inline-flex items-center gap-2 text-[13px] text-ink-500">
           <Loader2 className="size-4 animate-spin" aria-hidden />

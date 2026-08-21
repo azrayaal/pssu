@@ -124,7 +124,7 @@ export default function CashTransactionsPage() {
                     { header: 'Rekonsiliasi', value: (row: CashTransaction) => (row.reconciled ? 'Cocok' : 'Belum') },
                   ],
                   data?.data ?? [],
-                  { title: 'Transaksi Kas dan Bank', subtitle: 'PT PSSU Indonesia' },
+                  { title: 'Transaksi Kas dan Bank', subtitle: 'PT PTSU Indonesia' },
                 );
                 toast.success('Ekspor selesai', 'Berkas Excel transaksi kas telah diunduh.');
               }}

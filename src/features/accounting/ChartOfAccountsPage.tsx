@@ -323,7 +323,7 @@ export default function ChartOfAccountsPage() {
               onClick={() => {
                 exportToExcel('bagan-akun', exportColumns, data?.data ?? [], {
                   title: 'Bagan Akun',
-                  subtitle: 'PT PSSU Indonesia',
+                  subtitle: 'PT PTSU Indonesia',
                 });
                 toast.success('Ekspor selesai', 'Berkas Excel bagan akun telah diunduh.');
               }}

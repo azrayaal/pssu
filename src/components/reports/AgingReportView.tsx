@@ -111,7 +111,7 @@ export function AgingReportView({
           onExportExcel={() => {
             exportToExcel(fileName, exportColumns, data?.rows ?? [], {
               title,
-              subtitle: `PT PSSU Indonesia — per ${formatDateLong(asOf)}`,
+              subtitle: `PT PTSU Indonesia — per ${formatDateLong(asOf)}`,
             });
             toast.success('Ekspor selesai', `Berkas Excel ${title.toLowerCase()} telah diunduh.`);
           }}

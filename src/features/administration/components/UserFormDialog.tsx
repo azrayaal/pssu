@@ -110,7 +110,7 @@ export function UserFormDialog({
           </Field>
         </div>
         <Field label="Email" htmlFor="uemail" required error={errors.email?.message}>
-          <TextInput id="uemail" type="email" placeholder="nama@pssu.co.id" invalid={Boolean(errors.email)} {...form.register('email')} />
+          <TextInput id="uemail" type="email" placeholder="nama@ptsu.co.id" invalid={Boolean(errors.email)} {...form.register('email')} />
         </Field>
         <Field label="Telepon" htmlFor="uphone" required error={errors.phone?.message}>
           <TextInput id="uphone" placeholder="0812-3456-7890" invalid={Boolean(errors.phone)} {...form.register('phone')} />

@@ -257,7 +257,7 @@ export default function CustomersPage() {
                     { header: 'Status', value: (row: Customer) => row.status },
                   ],
                   data?.data ?? [],
-                  { title: 'Daftar Pelanggan', subtitle: 'PT PSSU Indonesia' },
+                  { title: 'Daftar Pelanggan', subtitle: 'PT PTSU Indonesia' },
                 );
                 toast.success('Ekspor selesai', 'Berkas Excel daftar pelanggan telah diunduh.');
               }}

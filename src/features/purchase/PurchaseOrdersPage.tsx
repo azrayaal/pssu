@@ -220,7 +220,7 @@ export default function PurchaseOrdersPage() {
                     { header: 'Status', value: (row: PurchaseOrder) => row.status },
                   ],
                   data?.data ?? [],
-                  { title: 'Pesanan Pembelian', subtitle: 'PT PSSU Indonesia' },
+                  { title: 'Pesanan Pembelian', subtitle: 'PT PTSU Indonesia' },
                 );
                 toast.success('Ekspor selesai', 'Berkas Excel pesanan pembelian telah diunduh.');
               }}

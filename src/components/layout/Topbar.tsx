@@ -76,7 +76,7 @@ export function Topbar() {
             className="flex h-9 items-center gap-2 rounded-md border border-ink-300 bg-white px-2.5 text-left transition-colors hover:bg-ink-50"
           >
             <span className="flex size-6 shrink-0 items-center justify-center rounded-full bg-brand-700 text-[10px] font-bold text-white">
-              {activeCompany?.initials ?? 'PS'}
+              {activeCompany?.initials ?? 'PT'}
             </span>
             <span className="hidden min-w-0 flex-col sm:flex">
               <span className="truncate text-[13px] font-medium leading-tight text-ink-800">
@@ -201,7 +201,7 @@ export function Topbar() {
               aria-label="Menu pengguna"
             >
               <span className="flex size-7 items-center justify-center rounded-full bg-brand-700 text-[11px] font-semibold text-white">
-                {currentUser?.initials ?? 'PS'}
+                {currentUser?.initials ?? 'PT'}
               </span>
               <span className="hidden min-w-0 flex-col text-left lg:flex">
                 <span className="truncate text-[13px] font-medium leading-tight text-ink-800">

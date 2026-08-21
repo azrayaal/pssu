@@ -40,7 +40,7 @@ export const useUiStore = create<UiState>()(
       setExpandedGroups: (expandedGroups) => set({ expandedGroups }),
     }),
     {
-      name: 'pssu.ui',
+      name: 'ptsu.ui',
       partialize: (state) => ({
         sidebarCollapsed: state.sidebarCollapsed,
         density: state.density,
