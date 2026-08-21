@@ -1,4 +1,4 @@
-import { useEffect, useMemo } from 'react';
+import { useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { Controller, useFieldArray, useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -70,12 +70,12 @@ export default function JournalEntryFormPage() {
     });
   }, [existing, form]);
 
+  // form.watch() returns a reference React Hook Form mutates in place, so these
+  // totals are derived during render rather than memoised on that reference.
   const lines = form.watch('lines') ?? [];
-  const totals = useMemo(() => {
-    const debit = lines.reduce((sum, line) => sum + (Number(line?.debit) || 0), 0);
-    const credit = lines.reduce((sum, line) => sum + (Number(line?.credit) || 0), 0);
-    return { debit, credit, difference: debit - credit };
-  }, [lines]);
+  const totalDebit = lines.reduce((sum, line) => sum + (Number(line?.debit) || 0), 0);
+  const totalCredit = lines.reduce((sum, line) => sum + (Number(line?.credit) || 0), 0);
+  const totals = { debit: totalDebit, credit: totalCredit, difference: totalDebit - totalCredit };
 
   const balanced = totals.difference === 0 && totals.debit > 0;
 

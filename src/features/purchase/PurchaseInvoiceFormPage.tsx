@@ -1,4 +1,4 @@
-import { useEffect, useMemo } from 'react';
+import { useEffect } from 'react';
 import { useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -83,7 +83,9 @@ export default function PurchaseInvoiceFormPage() {
   }, [existing, form]);
 
   const items = form.watch('items') ?? [];
-  const totals = useMemo(() => computeTotals(items), [items]);
+  // Derived during render: form.watch() mutates its array in place, so a
+  // useMemo keyed on it would never recompute.
+  const totals = computeTotals(items);
 
   const mutation = useMutation({
     mutationFn: ({ values, status }: { values: PurchaseInvoiceFormValues; status: PurchaseInvoiceFormValues['status'] }) =>

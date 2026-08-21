@@ -184,7 +184,7 @@ export function Sidebar() {
           aria-label={collapsed ? 'Perlebar navigasi' : 'Perkecil navigasi'}
         >
           {collapsed ? <PanelLeftOpen className="size-4.5" /> : <PanelLeftClose className="size-4.5" />}
-          {!collapsed && <span>Perkecil menu</span>}
+          {!collapsed && <span></span>}
         </button>
       </div>
     </aside>
